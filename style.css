@@ -4,60 +4,47 @@ body{
     height: 600px;
     margin: 0   ;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
 }
 
-.bg-box {
-    position: relative;
+/* .bg-box {
     width: 800px;
     height: 500px;
-    background-image: url(./dom.webp) ;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    left: 250px;
-    top: 100px;
-}
+
+} */
 
 .bg-box::before{
-    content: "............................................................................................................";
-    position: absolute;
-    background-image: url(./lamp.png);
-    background-size: contain;
-    background-repeat: repeat-x;
-            
-}
-.bg-box::after{
-    position: absolute;
-    content: "sdddddddddddddd";
-    background-image: url(./ej.webp);
-    background-size: contain;
-    background-repeat: repeat-y;
-    top: 5px;
-    right : 111px;
-    width: 30px;
-    height: calc(106% - 40px);
-border: 5px solid red;
  
+
 }
 .bg-box::after{
+    display: block;
+    height: 643px;
+    width: 100%;
+    content: "";
+    background-image: url(./dom.webp), url(./ej.webp), url(./ponchik.png), url(./green.png), url(./lamp.png) ;
+    background-size: 500px,50px,50px,300px,50px ;
+    background-repeat: no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+   background-position: center ,left top, right top, left bottom, left top;
+   
+
+}
+/* .bg-box::after{
     position: absolute;
     content: "";
     background-image: url(./ponchik.png);
     background-size: contain;
     background-repeat: repeat-y;
-    top: 5px;
-    left: 760px;
     width: 30px;
     height: calc(106% - 40px);
-    
+     */
     /* border-image: url(./ponchik.png) 30 repeat;
     border-width: 30px; */
 
-}
+
 /* .bg-box:first-child{
     content: "2333333333333 ";
     position: absolute;
